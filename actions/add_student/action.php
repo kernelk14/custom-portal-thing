@@ -15,14 +15,14 @@ if ($conn->connect_error) {
 
 if (isset($_POST['action_add_student'])) {
 
-    $s_num = $_POST['student_number'];
-    $lname = $_POST['lname'];
-    $fname = $_POST['fname'];
-    $mname = $_POST['mname'];
-    $email_add = $_POST['email_add'];
-    $course = $_POST['course'];
-    $yr_lvl = $_POST['yr_lvl'];
-    $section = $_POST['section'];
+    $s_num = htmlspecialchars($_POST['student_number']);
+    $lname = htmlspecialchars($_POST['lname']);
+    $fname = htmlspecialchars($_POST['fname']);
+    $mname = htmlspecialchars($_POST['mname']);
+    $email_add = htmlspecialchars($_POST['email_add']);
+    $course = htmlspecialchars($_POST['course']);
+    $yr_lvl = htmlspecialchars($_POST['yr_lvl']);
+    $section = htmlspecialchars($_POST['section']);
 
     setcookie("langcookie", "cookiedata");
 
@@ -32,7 +32,6 @@ if (isset($_POST['action_add_student'])) {
     $result = $stmt->execute();
     if ($result) {
         header("Location: ../../");
-        /* echo "<script>console.log('add_student/action: Record Added Successfully.')</script>"; */
     } else {
         echo "<script>console.log('[Error] add_student/action: " . $conn->error . "')</script>";
     }
