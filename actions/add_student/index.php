@@ -24,22 +24,22 @@
                 <br />
                 <div class="form-row">
                     <div class="form-group col-auto">
-                        <label for="lname">Enter last name</label>
+                        <label for="lname">Enter your last name</label>
                         <input type="text" id="lname" name="lname" class="form-control" placeholder="Last Name" autocomplete="off">
-                        <label for="lname">Enter first name</label>
+                        <label for="lname">Enter your first name</label>
                         <input type="text" id="fname" name="fname" class="form-control" placeholder="First Name" autocomplete="off">
-                        <label for="lname">Enter middle name</label>
+                        <label for="lname">Enter your middle name</label>
                         <input type="text" id="mname" name="mname" class="form-control" placeholder="Middle Name" autocomplete="off">
                     </div>
                 </div>
                 <br />
                 <div class="form-group">
                     <label for="email_add">Institutional email address</label>
-                    <input type="email" class="form-control" name="email_add" id="email_add" placeholder="firstname.lastname@institution.edu.ph" autocomplete="off">
+                    <input type="email" class="form-control" name="email_add" id="email_add" placeholder="firstname.lastname@citycollegeoftagaytay.edu.ph" autocomplete="off">
                 </div>
                 <br />
                 <div class="form-group">
-                    <label for="course">Enter course initials</label>
+                    <label for="course">Enter the course initials</label>
                     <input type="text" id="course" name="course" class="form-control" placeholder="Course" autocomplete="off">
 
                     <label for="yr_lvl">Year Level</label>
