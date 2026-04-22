@@ -51,8 +51,7 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
-        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
         <title>Ports</title>
         <script>
             if (window.history.replaceState) {
