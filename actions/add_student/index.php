@@ -10,10 +10,27 @@
         </script>
     </head>
     <body>
-        <form method="POST" action="../../">
-            <input type="submit" name="go_back" value="Go Back" class="btn btn-outline-dark m-2 mt-2">
-            <h3 class="m-2">Add Students</h3>
-        </form>
+    
+
+        <div class="container">
+            <header class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <form method="POST">
+                            <input type="submit" name="submit" value="Add Student" class="btn btn-dark m-2 mt-2" disabled>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form method="POST" action="../../">
+                            <input type="submit" name="go_back" value="View Students" class="btn btn-outline-dark m-2 mt-2">
+    
+                        </form>
+                    </li>
+                </ul>
+            </header>
+        </div>
+
+        <h3 class="m-2">Add Students</h3>        
         
         <div class="container">
             <form method="POST" action="./action.php">
@@ -76,9 +93,11 @@
                     </div>
                 </div>
                 <br />
+                
                 <div class="form-group">
                     <input type="submit" name="action_add_student" class="btn btn-primary mb-2" value="Submit" />
                 </div>
+                
             </form>
         </div>
     </body>

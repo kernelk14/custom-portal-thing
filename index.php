@@ -63,6 +63,24 @@
         <!--form method="POST" action="actions/add_student">
             <input type="submit" name="submit" value="Add Student" class="btn btn-outline-dark m-2 mt-2">
         </form -->
+
+        <div class="container">
+            <header class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <form method="POST" action="actions/add_student">
+                            <input type="submit" name="submit" value="Add Student" class="btn btn-outline-dark m-2 mt-2">
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form method="POST">
+                            <input type="submit" name="submit" value="View Students" class="btn btn-dark m-2 mt-2" disabled>
+                        </form>
+                    </li>
+                </ul>
+            </header>
+        </div>
+
         <h3 class="m-2">List of Students:</h3>
         <div class="container-fluid">
             <table class="table table-striped table-bordered table-hover">
@@ -89,6 +107,7 @@
                 </tbody>
             </table>
         </div>
+        <!--
         <div class="container">
             <center>
                 <form method="POST" action="actions/add_student">
@@ -96,5 +115,6 @@
                 </form>
             </center>
         </div>
+        -->
     </body>
 </html>
